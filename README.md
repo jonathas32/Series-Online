@@ -121,18 +121,3 @@ O site é totalmente responsivo com breakpoints em:
 - 💻 Desenvolvido com HTML5, CSS3 e JavaScript
 - 🎵 Música de fundo instrumental para melhor experiência
 
-## 📄 Licença
-
-Este projeto é livre para uso pessoal e educacional.
-
-## 🤝 Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para:
-- Adicionar novas séries
-- Melhorar o design
-- Corrigir bugs
-- Sugerir novas funcionalidades
-
----
-
-⭐ Se você gostou deste projeto, deixe uma estrela no GitHub!
