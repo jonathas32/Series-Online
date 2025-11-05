@@ -1,0 +1,53 @@
+# Exerc-cio-de-HTML5
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recomendação de séries</title>
+</head>
+<body>
+
+  <header>
+    <img src=" telinha-filmes-e-series-yk4-screenshot_ width=_300_.avif">
+      <h1>Recomendando séries!</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">The chosen</a></li>
+      <li><a href="#">Peaky Blinders</a></li>
+      <li><a href="#">Prison Break</a></li>
+      <li><a href="#">This is Us</a></li>
+      <li><a href="#">Stranger Things</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Um breve resumo sobre cada uma!</h2>
+      <article><h3>1. The chosen</h3><p>Série dramática que retrata a vida de Jesus Cristo sob a perspectiva das pessoas que o conheceram.</p></article>
+      <article><h3>2.Peaky Blinders</h3><p>Gangue liderada por Tommy Shelby ascende ao poder no submundo britânico pós-Primeira Guerra.</p></article>
+      <article><h3>3. Prison Break</h3><p>Um engenheiro elabora um plano complexo para tirar seu irmão injustamente condenado da prisão.</p></article>
+      <article><h3>4. This is Us</h3><p> A emocionante história de uma família ao longo de décadas, explorando amor, perda e conexões profundas.</p></article>
+      <article><h3>5.Stranger Things</h3><p>Crianças enfrentam forças sobrenaturais e segredos governamentais após o desaparecimento de um amigo.</p></article>
+    </section>
+
+    <section>
+      <h2>Quer fugir totalmente das séries do momento e maratonar uma série com muitas temporadas?</h2>
+      <p>Supernatural é uma série de televisão americana que segue os irmãos Sam e Dean Winchester em suas viagens pelo país, caçando criaturas sobrenaturais e lutando contra o mal. A série explora temas como família, destino, livre-arbítrio e a luta entre o bem e o mal, contendo 15 temporadas épicas com 327 episódios no total.</p>
+    </section>
+
+    <section>
+      <h2>🖼️ Gostou de alguma série?</h2>
+      <p>Aqui está uma plataforma com as séries disponíveis.</p>
+      <img src="https://images.sftcdn.net/images/t_app-cover-s-16-9,f_auto/p/6aa0674d-d693-4d4d-b328-d9958a593dec/3867128104/telinha-filmes-e-series-yk4-screenshot" width="300">
+  </section>
+  </main>
+
+  <footer>
+    <p>Site criado por: Isabelly Reis| Data: 05/08/2025</p>
+  </footer>
+
+</body>
+</html>
