@@ -80,20 +80,6 @@ Cada série possui:
 - Tags de gênero
 - Botão com link para trailer no YouTube
 
-## 🌐 Como Executar
-
-### Localmente
-1. Abra o arquivo `index.html` em qualquer navegador
-2. Não requer servidor web (mas pode usar um para melhor experiência)
-
-### Com Servidor HTTP
-```bash
-python3 -m http.server 5000
-```
-
-### No Replit
-O projeto está configurado com workflow que serve o site na porta 5000 automaticamente.
-
 ## 📱 Responsividade
 
 O site adapta-se a diferentes tamanhos de tela:
