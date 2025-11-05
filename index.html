@@ -14,7 +14,11 @@
   </audio>
 
   <button id="music-toggle" class="music-toggle" aria-label="Controlar música">
-    🎵 <span id="music-status">Clique para ativar música</span>
+    🎵 <span id="music-status">Música</span>
+  </button>
+
+  <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+    🌙 <span id="theme-status">Dark Mode</span>
   </button>
 
   <header class="header">
@@ -221,23 +225,42 @@
     const musicToggle = document.getElementById('music-toggle');
     const backgroundMusic = document.getElementById('background-music');
     const musicStatus = document.getElementById('music-status');
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeStatus = document.getElementById('theme-status');
     let isPlaying = false;
 
     musicToggle.addEventListener('click', function() {
       if (isPlaying) {
         backgroundMusic.pause();
-        musicStatus.textContent = 'Música pausada';
-        musicToggle.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+        musicStatus.textContent = 'Música';
         isPlaying = false;
       } else {
         backgroundMusic.play();
-        musicStatus.textContent = 'Música tocando...';
-        musicToggle.style.background = 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)';
+        musicStatus.textContent = 'Pausar';
         isPlaying = true;
       }
     });
 
     backgroundMusic.volume = 0.3;
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    if (savedTheme === 'light') {
+      document.body.classList.add('light-mode');
+      themeStatus.textContent = 'Light Mode';
+      themeToggle.innerHTML = '☀️ <span id="theme-status">Light Mode</span>';
+    }
+
+    themeToggle.addEventListener('click', function() {
+      document.body.classList.toggle('light-mode');
+      
+      if (document.body.classList.contains('light-mode')) {
+        themeToggle.innerHTML = '☀️ <span id="theme-status">Light Mode</span>';
+        localStorage.setItem('theme', 'light');
+      } else {
+        themeToggle.innerHTML = '🌙 <span id="theme-status">Dark Mode</span>';
+        localStorage.setItem('theme', 'dark');
+      }
+    });
   </script>
 
 </body>
