@@ -2,14 +2,16 @@
 
 ## 📋 Visão Geral
 
-Site estático de recomendação de séries desenvolvido com **HTML5** e **CSS3 puro**, sem uso de JavaScript ou frameworks externos. O projeto foi criado para ser simples, criativo e fácil de versionar no GitHub.
+Site de recomendação de séries desenvolvido com **HTML5**, **CSS3** e **JavaScript vanilla**, sem uso de frameworks externos. O projeto foi criado para ser simples, criativo e fácil de versionar no GitHub.
 
 ## 🎯 Objetivo do Projeto
 
 Criar um site visualmente atraente que apresenta recomendações de séries com:
 - Design moderno e criativo
 - Animações CSS dinâmicas
+- Imagens atraentes para cada série
 - Links diretos para trailers no YouTube
+- Música de fundo instrumental
 - Layout totalmente responsivo
 - Estrutura organizada para versionamento Git
 
@@ -19,6 +21,13 @@ Criar um site visualmente atraente que apresenta recomendações de séries com:
 /
 ├── index.html      # Página principal com estrutura HTML5 semântica
 ├── styles.css      # Estilos CSS3 com gradientes e animações
+├── images/         # Pasta com imagens das séries
+│   ├── the-chosen.jpg
+│   ├── peaky-blinders.jpg
+│   ├── prison-break.jpg
+│   ├── this-is-us.jpg
+│   ├── stranger-things.jpg
+│   └── supernatural.jpg
 ├── README.md       # Documentação completa do projeto
 ├── .gitignore      # Arquivos ignorados pelo Git
 └── replit.md       # Documentação interna do projeto
@@ -33,6 +42,10 @@ Criar um site visualmente atraente que apresenta recomendações de séries com:
   - Animações e transições suaves
   - Efeitos de hover interativos
   - Media queries para responsividade
+- **JavaScript**: 
+  - Controle do player de música de fundo
+  - Toggle play/pause com feedback visual
+- **Imagens**: Fotos stock de alta qualidade para cada série
 
 ## 🎨 Características de Design
 
@@ -60,6 +73,7 @@ Criar um site visualmente atraente que apresenta recomendações de séries com:
 6. **Supernatural** - Fantasia/Terror (destaque especial)
 
 Cada série possui:
+- Imagem atraente com efeito zoom no hover
 - Card individual com cabeçalho colorido
 - Ícone emoji temático
 - Descrição resumida
@@ -88,14 +102,17 @@ O site adapta-se a diferentes tamanhos de tela:
 - **Tablet** (481-768px): Grid de 2 colunas
 - **Mobile** (< 480px): Grid de 1 coluna, navegação vertical
 
-## 🎭 Animações CSS Implementadas
+## 🎭 Animações e Efeitos Implementados
 
 1. **Rotação** - Ícone do logo gira continuamente
 2. **Pulse** - Efeito de pulsação no header
 3. **Bounce** - Ícones dos cards saltam suavemente
 4. **Hover Effects** - Cards elevam ao passar o mouse
-5. **Flicker** - Ícone da seção Supernatural pisca
-6. **Transitions** - Transições suaves em botões e links
+5. **Zoom nas Imagens** - Imagens dos cards aumentam 10% no hover
+6. **Flicker** - Ícone da seção Supernatural pisca
+7. **Transitions** - Transições suaves em botões e links
+8. **Música de Fundo** - Player controlável com botão flutuante
+9. **Imagem de Fundo** - Seção Supernatural com imagem desfocada
 
 ## 🔗 Links para Trailers
 
@@ -111,7 +128,8 @@ Todos os links direcionam para trailers oficiais no YouTube:
 
 - **Nome**: Isabelly Reis
 - **Data de Criação**: 05/11/2025
-- **Tecnologias**: HTML5 e CSS3
+- **Tecnologias**: HTML5, CSS3 e JavaScript
+- **Recursos**: Imagens, música de fundo instrumental
 
 ## 📝 Notas de Desenvolvimento
 

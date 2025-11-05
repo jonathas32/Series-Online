@@ -8,13 +8,15 @@ SeriesFlix é uma landing page moderna que apresenta recomendações de séries 
 
 ## ✨ Características
 
-- 💻 **100% HTML e CSS** - Sem JavaScript, apenas código puro
+- 💻 **HTML, CSS e JavaScript** - Código limpo e bem estruturado
 - 🎨 **Design Moderno** - Gradientes coloridos e layout responsivo
 - ✨ **Animações CSS** - Efeitos de hover, transições e animações dinâmicas
 - 📱 **Responsivo** - Funciona perfeitamente em desktop, tablet e mobile
-- 🎯 **Cards Interativos** - Cada série tem seu próprio card com informações e link para trailer
+- 🎯 **Cards Interativos** - Cada série tem seu próprio card com imagem, informações e link para trailer
+- 🖼️ **Imagens das Séries** - Fotos atraentes para cada série com efeito zoom no hover
 - 🔗 **Links do YouTube** - Acesso direto aos trailers de cada série
 - 🎭 **Navegação Suave** - Menu fixo com links âncora para cada seção
+- 🎵 **Música de Fundo** - Player de música instrumental relaxante com controle on/off
 
 ## 📂 Estrutura do Projeto
 
@@ -23,6 +25,13 @@ seriesflix/
 │
 ├── index.html          # Página principal (HTML5 semântico)
 ├── styles.css          # Estilos e animações CSS3
+├── images/             # Pasta com imagens das séries
+│   ├── the-chosen.jpg
+│   ├── peaky-blinders.jpg
+│   ├── prison-break.jpg
+│   ├── this-is-us.jpg
+│   ├── stranger-things.jpg
+│   └── supernatural.jpg
 ├── README.md           # Documentação do projeto
 └── .gitignore          # Arquivos ignorados pelo Git
 ```
@@ -100,14 +109,17 @@ O site é totalmente responsivo com breakpoints em:
 
 - HTML5 (estrutura semântica)
 - CSS3 (Flexbox, Grid, Animations, Gradients)
+- JavaScript (controle do player de música)
 - Design responsivo com Media Queries
+- Música instrumental de fundo
 
 ## 👤 Autor
 
 **Isabelly Reis**
 
 - 📅 Data de criação: 05/11/2025
-- 💻 Desenvolvido com HTML5 e CSS3
+- 💻 Desenvolvido com HTML5, CSS3 e JavaScript
+- 🎵 Música de fundo instrumental para melhor experiência
 
 ## 📄 Licença
 

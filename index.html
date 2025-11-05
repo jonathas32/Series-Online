@@ -9,6 +9,14 @@
 </head>
 <body>
 
+  <audio id="background-music" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="music-toggle" class="music-toggle" aria-label="Controlar música">
+    🎵 <span id="music-status">Clique para ativar música</span>
+  </button>
+
   <header class="header">
     <div class="header-content">
       <div class="logo">
@@ -45,6 +53,9 @@
       <div class="series-grid">
         
         <article class="series-card" id="the-chosen">
+          <div class="card-image">
+            <img src="images/the-chosen.jpg" alt="The Chosen - Série dramática">
+          </div>
           <div class="card-header">
             <span class="card-icon">✨</span>
             <h3>The Chosen</h3>
@@ -64,6 +75,9 @@
         </article>
 
         <article class="series-card" id="peaky-blinders">
+          <div class="card-image">
+            <img src="images/peaky-blinders.jpg" alt="Peaky Blinders - Crime e drama">
+          </div>
           <div class="card-header">
             <span class="card-icon">🎩</span>
             <h3>Peaky Blinders</h3>
@@ -83,6 +97,9 @@
         </article>
 
         <article class="series-card" id="prison-break">
+          <div class="card-image">
+            <img src="images/prison-break.jpg" alt="Prison Break - Suspense e ação">
+          </div>
           <div class="card-header">
             <span class="card-icon">🔒</span>
             <h3>Prison Break</h3>
@@ -102,6 +119,9 @@
         </article>
 
         <article class="series-card" id="this-is-us">
+          <div class="card-image">
+            <img src="images/this-is-us.jpg" alt="This is Us - Drama familiar">
+          </div>
           <div class="card-header">
             <span class="card-icon">❤️</span>
             <h3>This is Us</h3>
@@ -121,6 +141,9 @@
         </article>
 
         <article class="series-card" id="stranger-things">
+          <div class="card-image">
+            <img src="images/stranger-things.jpg" alt="Stranger Things - Ficção científica">
+          </div>
           <div class="card-header">
             <span class="card-icon">👾</span>
             <h3>Stranger Things</h3>
@@ -143,6 +166,9 @@
     </section>
 
     <section class="featured-section" id="supernatural">
+      <div class="featured-image-bg">
+        <img src="images/supernatural.jpg" alt="Supernatural Background" class="featured-bg-img">
+      </div>
       <div class="featured-content">
         <div class="featured-icon">🔥</div>
         <h2 class="featured-title">Maratona Épica: Supernatural</h2>
@@ -190,6 +216,29 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    const musicToggle = document.getElementById('music-toggle');
+    const backgroundMusic = document.getElementById('background-music');
+    const musicStatus = document.getElementById('music-status');
+    let isPlaying = false;
+
+    musicToggle.addEventListener('click', function() {
+      if (isPlaying) {
+        backgroundMusic.pause();
+        musicStatus.textContent = 'Música pausada';
+        musicToggle.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+        isPlaying = false;
+      } else {
+        backgroundMusic.play();
+        musicStatus.textContent = 'Música tocando...';
+        musicToggle.style.background = 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)';
+        isPlaying = true;
+      }
+    });
+
+    backgroundMusic.volume = 0.3;
+  </script>
 
 </body>
 </html>
