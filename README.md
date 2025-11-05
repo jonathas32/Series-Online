@@ -118,6 +118,6 @@ O site é totalmente responsivo com breakpoints em:
 **Isabelly Reis**
 
 - 📅 Data de criação: 05/11/2025
-- 💻 Desenvolvido com HTML5, CSS3 e JavaScript
+- 💻 Desenvolvido com HTML5, CSS e JavaScript
 - 🎵 Música de fundo instrumental para melhor experiência
 
